@@ -31,6 +31,13 @@
             font-size: 24px;
         }
     </style>
+<img src="god.gif" alt="Описание GIF-файла" style="width: 300px; height: auto;">
+<img src="god.gif" alt="Описание GIF-файла" style="width: 300px; height: auto;">
+<img src="god.gif" alt="Описание GIF-файла" style="width: 300px; height: auto;">
+<img src="god.gif" alt="Описание GIF-файла" style="width: 300px; height: auto;">
+<img src="god.gif" alt="Описание GIF-файла" style="width: 300px; height: auto;">
+<img src="god.gif" alt="Описание GIF-файла" style="width: 300px; height: auto;">
+
 
 <h1>Добро пожаловать на мой сайт!</h1>
 
@@ -82,7 +89,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пример ссылки</title>
 
-    <p>Чтобы перейти на мой сайт нажмите <a href="https://www.figma.com/design/QazzNtoXUWYeETr7pUgJ9B/Untitled?node-id=0-1&t=RWOd0Gy02dzst8XS-1" target="_blank" rel="noopener noreferrer">сюда</a>.</p>  
+    <p>Чтобы перейти на мой сайт нажмите <a href="https://www.figma.com/design/QazzNtoXUWYeETr7pUgJ9B/Untitled?node-id=0-1&t=RWOd0Gy02dzst8XS-1" target="_blank" rel="noopener noreferrer">сюда</a>.</p>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя Иконка</title>
     <img src="icon.png" alt="Описание иконки" style="width: 256px; height: 256px;">
@@ -225,27 +232,1261 @@
  <a href="https://onlinetestpad.com/lh5tizrggebj4" target="_blank" rel="noopener noreferrer">Начать тестирование</a>.</p>                                                                                               
     </form>
 </div>
-
-
-
-
-
-
-
-<a href="https://www.figma.com/design/QazzNtoXUWYeETr7pUgJ9B/Untitled?node-id=0-1&t=RWOd0Gy02dzst8XS-1" target="_blank" rel="noopener noreferrer">Посетить мой второй сайт</a>.</p>      
-
-
-
-
+<a href="https://www.figma.com/design/QazzNtoXUWYeETr7pUgJ9B/Untitled?node-id=0-1&t=RWOd0Gy02dzst8XS-1" target="_blank" rel="noopener noreferrer">Посетить черновик Figma <a>.</p>      
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вставка GIF-файла</title>
 </head>
 <a href="https://pryadikhin.bitrix24site.ru" target="_blank" rel="noopener noreferrer">Посетить Bitrix24 </a>.</p> 
 <a href="https://rus29.wordpress.com/2024/10/30/%d0%b7%d0%b0%d0%bd%d1%8f%d1%82%d0%b8%d0%b5-%d1%81%d0%bf%d0%be%d1%80%d1%82%d0%be%d0%bc-%d0%b2-%d0%b4%d0%be%d0%bc%d0%b0%d1%88%d0%bd%d0%b8%d1%85-%d1%83%d1%81%d0%bb%d0%be%d0%b2%d0%b8%d1%8f%d1%85/" target="_blank" rel="noopener noreferrer">Посетить WordPress</a>.</p> 
-   
-   
-    <img src="god.gif" alt="Описание GIF-файла" style="width: 300px; height: auto;">
+ <img src="god.gif" alt="Описание GIF-файла" style="width: 300px; height: auto;">
+<img src="god.gif" alt="Описание GIF-файла" style="width: 300px; height: auto;">
+<img src="god.gif" alt="Описание GIF-файла" style="width: 300px; height: auto;">
+<img src="god.gif" alt="Описание GIF-файла" style="width: 300px; height: auto;">
+<img src="god.gif" alt="Описание GIF-файла" style="width: 300px; height: auto;">
+<img src="god.gif" alt="Описание GIF-файла" style="width: 300px; height: auto;">
+
+
+
+
+
+
+
+<button onclick="generatePassword()">Сгенерировать пароль</button>
+<p id="password"></p>
+
+<script>
+function generatePassword(length = 12) {
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+    let password = "random";
+    for (let i = 0; i < length; i++) {
+        password += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    document.getElementById('password').innerText = password;
+}
+</script>
+
+
+
+<button onclick="generateTable()">Сгенерировать таблицу</button>
+<div id="tableContainer"></div>
+
+<script>
+function generateTable() {
+    const table = document.createElement('table');
+    const rows = 3;
+    const columns = 3;
+
+    for (let i = 0; i < rows; i++) {
+        const tr = document.createElement('tr');
+        for (let j = 0; j < columns; j++) {
+            const td = document.createElement('td');
+            td.innerText = `Ячейка ${i + 1}-${j + 1}`;
+            tr.appendChild(td);
+        }
+        table.appendChild(tr);
+    }
+
+    document.getElementById('tableContainer').innerHTML = ''; // Очищаем предыдущую таблицу
+    document.getElementById('tableContainer').appendChild(table);
+}
+</script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://bootstraptema.ru/plugins/2015/jquery-ui/jquery-ui.css" />
+<link rel="Stylesheet" type="text/css" href="https://rus-shrift.ru/assets/css/jquery.miniColors.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://bootstraptema.ru/plugins/2015/jquery-ui/jquery-ui.js"></script>
+<script type="text/javascript" src="https://rus-shrift.ru/assets/js/jquery.miniColors.js"></script>
+<script type="text/javascript" src="https://rus-shrift.ru/assets/js/main.js"></script>
+
+<style>
+@font-face {
+ font-family:'DublonC';
+ src: url('https://bootstraptema.ru/assets/fonts/DublonC.otf');
+}
+@font-face {
+ font-family:'DublonC';
+ src: url('https://bootstraptema.ru/assets/fonts/DublonC.otf');
+}
+div#div_menu_text_shadow button:hover {background-color:#fff;color:#444;border:#333}
+div#div_menu_text_shadow button:hover { 
+transform: rotateY(180deg);
+-webkit-transition: color 2.0s ease-in-out;
+-moz-transition: color 2.0s ease-in-out;
+-ms-transition: color 2.0s ease-in-out;
+-o-transition: color 2.0s ease-in-out;
+transition: color 2.0s ease-in-out; 
+unicode-bidi: bidi-override;
+direction: rtl;
+}
+.div_text_shadow
+{
+ width:100%;
+ min-height:100px;
+ margin:20px auto;
+}
+#div_result_display
+{ 
+ border-radius: 5px; 
+ border: 1px solid #222; 
+ color: #000;
+ background-color: #fff;
+ font-size: 12px; 
+ margin: 20px auto 5px auto;
+ padding: 20px;
+}
+.ts_custom {
+ color: rgb(255, 145, 145);
+ background-color: #FFFFFF;
+ text-shadow: rgb(3, 3, 3) 4px 4px 4px;
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A; 
+ padding: 10px; 
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+
+.ts_shadow {
+ color: #FFFFFF;
+ background-color: #996D6D;
+ text-shadow: 3px 5px 2px #474747;
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ padding: 10px;
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+.ts_inset1 {
+ color: #616161;
+ background-color: #BABABA;
+ text-shadow: 1px 1px 0px #E0E0E0;
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ padding: 10px;
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+.ts_inset2 {
+ background-color: #888888;
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ background-clip: text;
+ color: transparent;
+ text-shadow: rgba(255,255,255,0.6) 0px 3px 3px;
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ padding: 10px;
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+.ts_retro {
+ color: #FFFFFF;
+ background-color: #F7C1C1;
+ text-shadow: 4px 3px 0px #7A7A7A;
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ padding: 10px;
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+.ts_glow {
+ color: #FFFFFF;
+ background-color: #03592D;
+ text-shadow: 0px 0px 10px #FFFFFF;
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ padding: 10px;
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+.ts_neon {
+ color: #FFFFFF;
+ text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+ background-color: #333333;
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ padding: 10px;
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+.ts_fire {
+ color: #FFFFFF;
+ text-shadow: 0px -1px 4px #FFFFFF, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px #FF0000;
+ background-color: #333333;
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ padding: 10px;
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+.ts_blur {
+ color: rgba(255, 255, 255, 0.3);
+ text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5), 0px 0px 10px rgba(255, 255, 255, 0.5);
+ background-color: #1A1A1A;
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ padding: 10px;
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+
+.ts_hsla {
+ color: #F70F3D;
+ text-shadow: 0px 0px hsla(0, 50%, 90%, .5), 1px -1px hsla(0, 60%, 50%, .6), 2px -2px hsla(0, 70%, 90%, .7), 3px -3px hsla(0, 80%, 50%, .8), 4px -4px hsla(0, 90%, 90%, .9), 5px -5px hsla(0, 100%, 50%, 1.0);
+ background-color: #1A1A1A;
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ padding: 10px;
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+
+.ts_emboss1 {
+ color: rgba(0,0,0,0.6);
+ text-shadow: 3px 2px 3px rgba(255,255,255,0.2);
+ background-color: #6E6E6E;
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ padding: 10px;
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+.ts_emboss2 {
+ color: rgba(0,0,0,0.6);
+ background-color: #5593C2;
+ text-shadow: 2px 6px 5px rgba(0,0,0,0.2), 0px -4px 30px rgba(255,255,255,0.4);
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ padding: 10px;
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+.ts_emboss3 {
+ color: #277A4F;
+ background-color: #277A4F;
+ text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ padding: 10px;
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+.ts_sharp {
+ color: #D9D9D9;
+ background-color: #BABABA;
+ text-shadow: 0px 4px 5px #2E2E2E;
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ padding: 10px;
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+.ts_classic {
+ color: #005900;
+ background-color: #FFFCA8;
+ text-shadow: 2px 2px 0px #FFFCA8, 4px 4px 0px #9C9C9C;
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ padding: 10px;
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+.ts_3d1 {
+ color: #FFFFFF;
+ background-color: #DCE0B3;
+ text-shadow: 1px 3px 0px #969696, 1px 13px 5px #ABA8A8;
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ padding: 10px;
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+.ts_3d2 {
+ text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.15), 0 5px 10px rgba(0,0,0,.2), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.1);
+ color: #FFFFFF;
+ background-color: #5593C2;
+ border: 6px solid #FFFFFF;
+ box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -webkit-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ -moz-box-shadow: 0px 0px 6px 2px #7A7A7A;
+ padding: 10px;
+ width: 100%;
+ font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ min-height: 100px;
+}
+</style>
+
+
+<div class="container" role="main">
+<div class="row">
+
+
+
+<div class="div_text_shadow">
+<input type="text" value="Впишите Сюда Ваш текст" id="div_result" class="ts_custom" />
+</div>
+
+</div>
+
+<div id="div_menu_text_shadow" class="col-md-12">
+<div class="col-md-6">
+<h4>Эффекты теней text-shadow</h4>
+<button id="custom">Эффект text-shadow</button>
+<button id="shadow">Эффект text-shadow min</button>
+<h4>Готовые эффекты</h4>
+<button id="inset1">Inset</button>
+<button id="retro">Retro</button>
+<button id="glow">Glow</button>
+<button id="neon">Neon</button>
+<button id="fire">Fire</button>
+<button id="blur">Blur</button>
+<button id="hsla">Hsla</button>
+<br><br>
+<button id="emboss1">Simple Emboss</button>
+<button id="emboss2">Realistic Emboss</button>
+<button id="emboss3">Artistic Emboss</button>
+<br><br>
+<button id="sharp">Bold &amp; Sharp</button>
+<button id="classic">Classic Movie</button>
+<br><br>
+<button id="3d1">Simple 3D</button>
+<button id="3d2">Realistic 3D</button>
+</div>
+
+<div class="col-md-6">
+<table class="tab-text-shaodw-setting">
+<tr>
+<td>
+Размер шрифта:
+</td>
+<td style="width: 200px;">
+<div id="slider_font_size_72" class="slider">
+</div>
+</td>
+<td>
+<span id="lbl_font_size" class="slider_result">36</span>px
+</td>
+</tr>
+<tr>
+<td>
+Цвет шрифта:
+</td>
+<td>
+<input name="font_color" type="text" value="#FF9191" id="font_color" class="color-picker" style="width: 80px;" />
+</td>
+</tr>
+<tr>
+<td>
+Цвет фона:
+</td>
+<td>
+<input name="background_color" type="text" value="#787878" id="background_color" class="color-picker" style="width: 80px;" />
+</td>
+</tr>
+<tr class="custom">
+<td>
+Цвет тени:
+</td>
+<td>
+<input name="text_shadow_color" type="text" value="#030303" id="text_shadow_color" class="color-picker" style="width: 80px;" />
+</td>
+</tr>
+<tr class="custom">
+<td>
+Горизонтальное смещение:
+</td>
+<td>
+<div id="slider_bs_horizontal_length_25" class="slider">
+</div>
+</td>
+<td>
+<span id="lbl_slider_bs_horizontal_length" class="slider_result">4</span>px
+</td>
+</tr>
+<tr class="custom">
+<td>
+Вертикальное смещение:
+</td>
+<td>
+<div id="slider_bs_vertical_length_25" class="slider">
+</div>
+</td>
+<td>
+<span id="lbl_slider_bs_vertical_length" class="slider_result">4</span>px
+</td>
+</tr>
+<tr class="custom">
+<td>
+Размытость:
+</td>
+<td>
+<div id="slider_bs_blur_radius_25" class="slider">
+</div>
+</td>
+<td>
+<span id="lbl_slider_bs_blur_radius" class="slider_result">4</span>px
+</td>
+</tr>
+</table>
+<div id="div_result_display">Готовый код для применения</div>
+</div>
+
+</div>
+
+
+<div class="clearfix"></div>
+
+</div>
+
+<script>
+$("#div_result").css({"font-family": "DublonC"});
+function css() {
+ var result = "&lt;style&gt;</br>@font-face {</br>font-family: 'DublonC';</br>src: url('https://bootstraptema.ru/assets/fonts/DublonC.otf');</br>}</br>.text_effect {</br>font-family: 'DublonC';</br>"
+ result = result + "color: " + $("#div_result").css('color') + ";</br>"
+ result = result + "font-size: " + $("#div_result").css('font-size') + ";</br>"
+ result = result + "background-color: " + $("#div_result").css('background-color') + ";</br>"
+ result = result + "text-shadow: " + $("#div_result").css('text-shadow') + ";"
+ result = result + "</br>}</br>&lt;/style&gt;</br>"
+ result = result + "&lt;p " + "class=" + "&quot;" + "text_effect" + "&quot;" + "&gt;" + "Ваш текст" + "&lt;/p&gt;"
+ $("#div_result_display").html(result);
+};
+function text_shadow() {
+ var result = "&lt;style&gt;</br>@font-face {</br>font-family: 'DublonC';</br>src: url('https://bootstraptema.ru/assets/fonts/DublonC.otf');</br>}</br>.text_effect {</br>font-family: 'DublonC';</br>"
+ result = result + "color: " + $("#div_result").css('color') + ";</br>";
+ result = result + "font-size: " + $("#div_result").css('font-size') + ";</br>";
+ result = result + "background-color: " + $("#div_result").css('background-color') + ";</br>";
+ result = result + "text-shadow: " + $("#div_result").css('text-shadow') + ";"
+ if (i > 0) { 
+ $("#div_result").css("text-shadow", $("#slider_bs_horizontal_length_25").slider("value") + "px " + $("#slider_bs_vertical_length_25").slider("value") + "px " + $("#slider_bs_blur_radius_25").slider("value") + "px " + $("#text_shadow_color").miniColors("value"));
+};
+ result = result + "</br>}</br>&lt;/style&gt;</br>"
+ result = result + "&lt;p " + "class=" + "&quot;" + "text_effect" + "&quot;" + "&gt;" + "Ваш текст" + "&lt;/p&gt;"
+ $("#div_result_display").html(result);
+};
+</script>
+
+
+
+
+
+
+
+
+<html lang="ru">
+<head >
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title >Генератор HTML и CSS символов</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://bootstraptema.ru/plugins/2015/bootstrap3/bootstrap.min.css" />
+<script src="https://bootstraptema.ru/plugins/jquery/jquery-1.11.3.min.js"></script>
+</head> 
+<body>
+<h1 class="text-center">Генератор HTML и CSS символов</h1>
+<div class="clearfix"></div>
+<div id="symbols--html" class="col-md-12 center-block">
+<div class="header--symbols" id="symbols--html">
+<select class="select--blocks form-control btn-lg" multiple>
+<option value="лучшие символы">Топ символов HTML & CSS</option>
+<optgroup label="Популярные символы">
+<option value="2700..27BF">Дингбаты
+</option>
+<option value="2654..265f">Шахматные фигуры
+</option>
+<option value="2660..2667">Карточные масти
+</option>
+<option value="2648..2653">Знаки зодиака
+</option>
+<option value="26a2..26a9">Мужские и женские
+</option>
+<option value="2680..2685">Кубики игровые
+</option>
+<option value="2630..2637">Триграммы
+</option>
+<option value="13000..1342F">Египетские иероглифы
+</option>
+<option value="0400..04FF">Символы кириллицы
+</option>
+<option value="2800..28FF">Азбука Брайля
+</option>
+<option value="2190..21FF">Стрелки 1
+</option>
+<option value="27F0..27FF">Стрелки 2
+</option>
+<option value="2900..297F">Стрелки 3
+</option>
+<option value="2100..214F">Буквенные символы
+</option>
+<option value="20A0..20CF">Символы валют
+</option>
+<option value="2300..23FF">Технические символы
+</option>
+<option value="2460..24FF">Вложенные буквы и цифры
+</option>
+<option value="2500..257F">Символы для рамок
+</option>
+<option value="12000..123FF">Клинопись
+</option>
+<option value="25A0..25FF">Геометрические фигуры
+</option>
+<option value="16A0..16FF">Руны
+</option>
+</optgroup>
+<optgroup label="Оригинальный список всех символов">
+<option value="0000..007F">Basic Latin
+</option><option value="0080..00FF">Latin-1 Supplement
+</option><option value="0100..017F">Latin Extended-A
+</option><option value="0180..024F">Latin Extended-B
+</option><option value="0250..02AF">IPA Extensions
+</option><option value="02B0..02FF">Spacing Modifier Letters
+</option><option value="0300..036F">Combining Diacritical Marks
+</option><option value="0370..03FF">Greek and Coptic
+</option><option value="0400..04FF">Cyrillic
+</option><option value="0500..052F">Cyrillic Supplement
+</option><option value="0530..058F">Armenian
+</option><option value="0590..05FF">Hebrew
+</option><option value="0600..06FF">Arabic
+</option><option value="0700..074F">Syriac
+</option><option value="0750..077F">Arabic Supplement
+</option><option value="0780..07BF">Thaana
+</option><option value="07C0..07FF">NKo
+</option><option value="0800..083F">Samaritan
+</option><option value="0840..085F">Mandaic
+</option><option value="08A0..08FF">Arabic Extended-A
+</option><option value="0900..097F">Devanagari
+</option><option value="0980..09FF">Bengali
+</option><option value="0A00..0A7F">Gurmukhi
+</option><option value="0A80..0AFF">Gujarati
+</option><option value="0B00..0B7F">Oriya
+</option><option value="0B80..0BFF">Tamil
+</option><option value="0C00..0C7F">Telugu
+</option><option value="0C80..0CFF">Kannada
+</option><option value="0D00..0D7F">Malayalam
+</option><option value="0D80..0DFF">Sinhala
+</option><option value="0E00..0E7F">Thai
+</option><option value="0E80..0EFF">Lao
+</option><option value="0F00..0FFF">Tibetan
+</option><option value="1000..109F">Myanmar
+</option><option value="10A0..10FF">Georgian
+</option><option value="1100..11FF">Hangul Jamo
+</option><option value="1200..137F">Ethiopic
+</option><option value="1380..139F">Ethiopic Supplement
+</option><option value="13A0..13FF">Cherokee
+</option><option value="1400..167F">Unified Canadian Aboriginal Syllabics
+</option><option value="1680..169F">Ogham
+</option><option value="16A0..16FF">Runic
+</option><option value="1700..171F">Tagalog
+</option><option value="1720..173F">Hanunoo
+</option><option value="1740..175F">Buhid
+</option><option value="1760..177F">Tagbanwa
+</option><option value="1780..17FF">Khmer
+</option><option value="1800..18AF">Mongolian
+</option><option value="18B0..18FF">Unified Canadian Aboriginal Syllabics Extended
+</option><option value="1900..194F">Limbu
+</option><option value="1950..197F">Tai Le
+</option><option value="1980..19DF">New Tai Lue
+</option><option value="19E0..19FF">Khmer Symbols
+</option><option value="1A00..1A1F">Buginese
+</option><option value="1A20..1AAF">Tai Tham
+</option><option value="1AB0..1AFF">Combining Diacritical Marks Extended
+</option><option value="1B00..1B7F">Balinese
+</option><option value="1B80..1BBF">Sundanese
+</option><option value="1BC0..1BFF">Batak
+</option><option value="1C00..1C4F">Lepcha
+</option><option value="1C50..1C7F">Ol Chiki
+</option><option value="1CC0..1CCF">Sundanese Supplement
+</option><option value="1CD0..1CFF">Vedic Extensions
+</option><option value="1D00..1D7F">Phonetic Extensions
+</option><option value="1D80..1DBF">Phonetic Extensions Supplement
+</option><option value="1DC0..1DFF">Combining Diacritical Marks Supplement
+</option><option value="1E00..1EFF">Latin Extended Additional
+</option><option value="1F00..1FFF">Greek Extended
+</option><option value="2000..206F">General Punctuation
+</option><option value="2070..209F">Superscripts and Subscripts
+</option><option value="20A0..20CF">Currency Symbols
+</option><option value="20D0..20FF">Combining Diacritical Marks for Symbols
+</option><option value="2100..214F">Letterlike Symbols
+</option><option value="2150..218F">Number Forms
+</option><option value="2190..21FF">Arrows
+</option><option value="2200..22FF">Mathematical Operators
+</option><option value="2300..23FF">Miscellaneous Technical
+</option><option value="2400..243F">Control Pictures
+</option><option value="2440..245F">Optical Character Recognition
+</option><option value="2460..24FF">Enclosed Alphanumerics
+</option><option value="2500..257F">Box Drawing
+</option><option value="2580..259F">Block Elements
+</option><option value="25A0..25FF">Geometric Shapes
+</option><option value="2600..26FF">Miscellaneous Symbols
+</option><option value="2700..27BF">Dingbats
+</option><option value="27C0..27EF">Miscellaneous Mathematical Symbols-A
+</option><option value="27F0..27FF">Supplemental Arrows-A
+</option><option value="2800..28FF">Braille Patterns
+</option><option value="2900..297F">Supplemental Arrows-B
+</option><option value="2980..29FF">Miscellaneous Mathematical Symbols-B
+</option><option value="2A00..2AFF">Supplemental Mathematical Operators
+</option><option value="2B00..2BFF">Miscellaneous Symbols and Arrows
+</option><option value="2C00..2C5F">Glagolitic
+</option><option value="2C60..2C7F">Latin Extended-C
+</option><option value="2C80..2CFF">Coptic
+</option><option value="2D00..2D2F">Georgian Supplement
+</option><option value="2D30..2D7F">Tifinagh
+</option><option value="2D80..2DDF">Ethiopic Extended
+</option><option value="2DE0..2DFF">Cyrillic Extended-A
+</option><option value="2E00..2E7F">Supplemental Punctuation
+</option><option value="2E80..2EFF">CJK Radicals Supplement
+</option><option value="2F00..2FDF">Kangxi Radicals
+</option><option value="2FF0..2FFF">Ideographic Description Characters
+</option><option value="3000..303F">CJK Symbols and Punctuation
+</option><option value="3040..309F">Hiragana
+</option><option value="30A0..30FF">Katakana
+</option><option value="3100..312F">Bopomofo
+</option><option value="3130..318F">Hangul Compatibility Jamo
+</option><option value="3190..319F">Kanbun
+</option><option value="31A0..31BF">Bopomofo Extended
+</option><option value="31C0..31EF">CJK Strokes
+</option><option value="31F0..31FF">Katakana Phonetic Extensions
+</option><option value="3200..32FF">Enclosed CJK Letters and Months
+</option><option value="3300..33FF">CJK Compatibility
+</option><option value="3400..4DBF">CJK Unified Ideographs Extension A
+</option><option value="4DC0..4DFF">Yijing Hexagram Symbols
+</option><option value="4E00..9FFF">CJK Unified Ideographs
+</option><option value="A000..A48F">Yi Syllables
+</option><option value="A490..A4CF">Yi Radicals
+</option><option value="A4D0..A4FF">Lisu
+</option><option value="A500..A63F">Vai
+</option><option value="A640..A69F">Cyrillic Extended-B
+</option><option value="A6A0..A6FF">Bamum
+</option><option value="A700..A71F">Modifier Tone Letters
+</option><option value="A720..A7FF">Latin Extended-D
+</option><option value="A800..A82F">Syloti Nagri
+</option><option value="A830..A83F">Common Indic Number Forms
+</option><option value="A840..A87F">Phags-pa
+</option><option value="A880..A8DF">Saurashtra
+</option><option value="A8E0..A8FF">Devanagari Extended
+</option><option value="A900..A92F">Kayah Li
+</option><option value="A930..A95F">Rejang
+</option><option value="A960..A97F">Hangul Jamo Extended-A
+</option><option value="A980..A9DF">Javanese
+</option><option value="A9E0..A9FF">Myanmar Extended-B
+</option><option value="AA00..AA5F">Cham
+</option><option value="AA60..AA7F">Myanmar Extended-A
+</option><option value="AA80..AADF">Tai Viet
+</option><option value="AAE0..AAFF">Meetei Mayek Extensions
+</option><option value="AB00..AB2F">Ethiopic Extended-A
+</option><option value="AB30..AB6F">Latin Extended-E
+</option><option value="AB70..ABBF">Cherokee Supplement
+</option><option value="ABC0..ABFF">Meetei Mayek
+</option><option value="AC00..D7AF">Hangul Syllables
+</option><option value="D7B0..D7FF">Hangul Jamo Extended-B
+</option><option value="D800..DB7F">High Surrogates
+</option><option value="DB80..DBFF">High Private Use Surrogates
+</option><option value="DC00..DFFF">Low Surrogates
+</option><option value="E000..F8FF">Private Use Area
+</option><option value="F900..FAFF">CJK Compatibility Ideographs
+</option><option value="FB00..FB4F">Alphabetic Presentation Forms
+</option><option value="FB50..FDFF">Arabic Presentation Forms-A
+</option><option value="FE00..FE0F">Variation Selectors
+</option><option value="FE10..FE1F">Vertical Forms
+</option><option value="FE20..FE2F">Combining Half Marks
+</option><option value="FE30..FE4F">CJK Compatibility Forms
+</option><option value="FE50..FE6F">Small Form Variants
+</option><option value="FE70..FEFF">Arabic Presentation Forms-B
+</option><option value="FF00..FFEF">Halfwidth and Fullwidth Forms
+</option><option value="FFF0..FFFF">Specials
+</option><option value="10000..1007F">Linear B Syllabary
+</option><option value="10080..100FF">Linear B Ideograms
+</option><option value="10100..1013F">Aegean Numbers
+</option><option value="10140..1018F">Ancient Greek Numbers
+</option><option value="10190..101CF">Ancient Symbols
+</option><option value="101D0..101FF">Phaistos Disc
+</option><option value="10280..1029F">Lycian
+</option><option value="102A0..102DF">Carian
+</option><option value="102E0..102FF">Coptic Epact Numbers
+</option><option value="10300..1032F">Old Italic
+</option><option value="10330..1034F">Gothic
+</option><option value="10350..1037F">Old Permic
+</option><option value="10380..1039F">Ugaritic
+</option><option value="103A0..103DF">Old Persian
+</option><option value="10400..1044F">Deseret
+</option><option value="10450..1047F">Shavian
+</option><option value="10480..104AF">Osmanya
+</option><option value="10500..1052F">Elbasan
+</option><option value="10530..1056F">Caucasian Albanian
+</option><option value="10600..1077F">Linear A
+</option><option value="10800..1083F">Cypriot Syllabary
+</option><option value="10840..1085F">Imperial Aramaic
+</option><option value="10860..1087F">Palmyrene
+</option><option value="10880..108AF">Nabataean
+</option><option value="108E0..108FF">Hatran
+</option><option value="10900..1091F">Phoenician
+</option><option value="10920..1093F">Lydian
+</option><option value="10980..1099F">Meroitic Hieroglyphs
+</option><option value="109A0..109FF">Meroitic Cursive
+</option><option value="10A00..10A5F">Kharoshthi
+</option><option value="10A60..10A7F">Old South Arabian
+</option><option value="10A80..10A9F">Old North Arabian
+</option><option value="10AC0..10AFF">Manichaean
+</option><option value="10B00..10B3F">Avestan
+</option><option value="10B40..10B5F">Inscriptional Parthian
+</option><option value="10B60..10B7F">Inscriptional Pahlavi
+</option><option value="10B80..10BAF">Psalter Pahlavi
+</option><option value="10C00..10C4F">Old Turkic
+</option><option value="10C80..10CFF">Old Hungarian
+</option><option value="10E60..10E7F">Rumi Numeral Symbols
+</option><option value="11000..1107F">Brahmi
+</option><option value="11080..110CF">Kaithi
+</option><option value="110D0..110FF">Sora Sompeng
+</option><option value="11100..1114F">Chakma
+</option><option value="11150..1117F">Mahajani
+</option><option value="11180..111DF">Sharada
+</option><option value="111E0..111FF">Sinhala Archaic Numbers
+</option><option value="11200..1124F">Khojki
+</option><option value="11280..112AF">Multani
+</option><option value="112B0..112FF">Khudawadi
+</option><option value="11300..1137F">Grantha
+</option><option value="11480..114DF">Tirhuta
+</option><option value="11580..115FF">Siddham
+</option><option value="11600..1165F">Modi
+</option><option value="11680..116CF">Takri
+</option><option value="11700..1173F">Ahom
+</option><option value="118A0..118FF">Warang Citi
+</option><option value="11AC0..11AFF">Pau Cin Hau
+</option><option value="12000..123FF">Cuneiform
+</option><option value="12400..1247F">Cuneiform Numbers and Punctuation
+</option><option value="12480..1254F">Early Dynastic Cuneiform
+</option><option value="13000..1342F">Egyptian Hieroglyphs
+</option><option value="14400..1467F">Anatolian Hieroglyphs
+</option><option value="16800..16A3F">Bamum Supplement
+</option><option value="16A40..16A6F">Mro
+</option><option value="16AD0..16AFF">Bassa Vah
+</option><option value="16B00..16B8F">Pahawh Hmong
+</option><option value="16F00..16F9F">Miao
+</option><option value="1B000..1B0FF">Kana Supplement
+</option><option value="1BC00..1BC9F">Duployan
+</option><option value="1BCA0..1BCAF">Shorthand Format Controls
+</option><option value="1D000..1D0FF">Byzantine Musical Symbols
+</option><option value="1D100..1D1FF">Musical Symbols
+</option><option value="1D200..1D24F">Ancient Greek Musical Notation
+</option><option value="1D300..1D35F">Tai Xuan Jing Symbols
+</option><option value="1D360..1D37F">Counting Rod Numerals
+</option><option value="1D400..1D7FF">Mathematical Alphanumeric Symbols
+</option><option value="1D800..1DAAF">Sutton SignWriting
+</option><option value="1E800..1E8DF">Mende Kikakui
+</option><option value="1EE00..1EEFF">Arabic Mathematical Alphabetic Symbols
+</option><option value="1F000..1F02F">Mahjong Tiles
+</option><option value="1F030..1F09F">Domino Tiles
+</option><option value="1F0A0..1F0FF">Playing Cards
+</option><option value="1F100..1F1FF">Enclosed Alphanumeric Supplement
+</option><option value="1F200..1F2FF">Enclosed Ideographic Supplement
+</option><option value="1F300..1F5FF">Miscellaneous Symbols and Pictographs
+</option><option value="1F600..1F64F">Emoticons
+</option><option value="1F650..1F67F">Ornamental Dingbats
+</option><option value="1F680..1F6FF">Transport and Map Symbols
+</option><option value="1F700..1F77F">Alchemical Symbols
+</option><option value="1F780..1F7FF">Geometric Shapes Extended
+</option><option value="1F800..1F8FF">Supplemental Arrows-C
+</option><option value="1F900..1F9FF">Supplemental Symbols and Pictographs
+</option><option value="20000..2A6DF">CJK Unified Ideographs Extension B
+</option><option value="2A700..2B73F">CJK Unified Ideographs Extension C
+</option><option value="2B740..2B81F">CJK Unified Ideographs Extension D
+</option><option value="2B820..2CEAF">CJK Unified Ideographs Extension E
+</option><option value="2F800..2FA1F">CJK Compatibility Ideographs Supplement
+</option><option value="E0000..E007F">Tags
+</option><option value="E0100..E01EF">Variation Selectors Supplement
+</option><option value="F0000..FFFFF">Supplementary Private Use Area-A
+</option><option value="100000..10FFFF">Supplementary Private Use Area-B
+</option>
+</optgroup>
+</select>
+<h3 class="title--symbols">Символы HTML по категориям</h3>
+</div>
+<div class="clearfix"></div>
+<div class="col-xs-12"><div class="text-center center-block" id="symbols">Загрузка...</div></div>
+<div class="clearfix"></div>
+<style>@import url("https://bootstraptema.ru/snippets/generator/2016/symbols/symbols-css.css");</style>
+<script src="https://bootstraptema.ru/snippets/generator/2016/symbols/symbols.js"></script>
+<script src="https://bootstraptema.ru/snippets/generator/2016/symbols/symbols-script.js"></script>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://bootstraptema.ru/plugins/2015/bootstrap3/bootstrap.min.css" />
+<script type="text/javascript" src="https://bootstraptema.ru/plugins/2015/b-v3-3-6/bootstrap.min.js"></script>
+
+<div class="container"><div class="row">
+
+<div class="col-lg-6 col-lg-offset-3 well">
+<h3 class="text-center">Счётчик символов</h3>
+<form class="form" action="javascript:void()" onsubmit="return false" name="form">
+<textarea class="form-control" name="text" placeholder="Введите Ваши символы сюда"></textarea>
+<hr />
+<input class="form-control" name="result" placeholder="Количество символов">
+<hr />
+<div class="col-xs-6">
+<input class="form-control btn btn-success" value="OK" onclick="count()" type="submit">
+</div>
+<div class="col-xs-6">
+<input class="form-control btn btn-danger" value="Очистить" type="reset">
+</div>
+</form>
+<script type="text/javascript">
+function isSpace(s){
+return (s==" " || s=="\n" || s=="\13" || s=="\t" || s=="\r")?true:false
+}
+function count(){
+var c=0
+var i
+var prevspace=true
+var str=document.forms.form.text.value
+for(i=str.length-1;i>=0;i--){
+if(isSpace(str.charAt(i)) && prevspace){
+}else{
+c++
+}
+prevspace=isSpace(str.charAt(i))
+}
+document.forms.form.result.value=c
+return false
+}
+</script>
+
+</div>
+
+</div></div>
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<br><br><br>
+
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-md-offset-3 well">
+
+<h3 class="text-center" style="color:red" id="mypassword"></h3>
+
+<hr />
+
+<div class="col-sm-3"><input onclick="password(8)" type="button" class="form-control btn btn-block btn-success" value="8" /></div>
+<div class="col-sm-3"><input onclick="password(16)" type="button" class="form-control btn btn-block btn-success" value="16" /></div>
+<div class="col-sm-3"><input onclick="password(24)" type="button" class="form-control btn btn-block btn-success" value="24" /></div>
+<div class="col-sm-3"><input onclick="password(32)" type="button" class="form-control btn btn-block btn-success" value="32" /></div>
+
+<div class="clearfix"></div>
+
+<hr />
+
+<pre><code>
+&lt;script&gt;
+function password(length, special) {
+ var iteration = 0;
+ var password = "";
+ var randomNumber;
+ if(special == undefined){
+ var special = false; // Использование спецсимволов отключено
+ }
+ while(iteration &lt; length){
+ randomNumber = (Math.floor((Math.random() * 100)) % 67) + 33;
+ if(!special){
+ if ((randomNumber &gt;=33) &amp;&amp; (randomNumber &lt;=47)) { continue; }
+ if ((randomNumber &gt;=58) &amp;&amp; (randomNumber &lt;=64)) { continue; }
+ if ((randomNumber &gt;=91) &amp;&amp; (randomNumber &lt;=96)) { continue; }
+ if ((randomNumber &gt;=123) &amp;&amp; (randomNumber &lt;=126)) { continue; }
+ }
+ iteration++;
+ password += String.fromCharCode(randomNumber);
+ }
+ document.getElementById('mypassword').innerHTML=password;
+}
+&lt;/script&gt;
+</code></pre>
+
+</div><!-- /.col-md-6 col-md-offset-3 well -->
+</div><!-- /.row -->
+</div><!-- /.container --> 
+
+<script>
+function password(length, special) {
+ var iteration = 0;
+ var password = "";
+ var randomNumber;
+ if(special == undefined){
+ var special = false; // Использование спецсимволов отключено
+ }
+ while(iteration < length){
+ randomNumber = (Math.floor((Math.random() * 100)) % 67) + 33;
+ if(!special){
+ if ((randomNumber >=33) && (randomNumber <=47)) { continue; }
+ if ((randomNumber >=58) && (randomNumber <=64)) { continue; }
+ if ((randomNumber >=91) && (randomNumber <=96)) { continue; }
+ if ((randomNumber >=123) && (randomNumber <=126)) { continue; }
+ }
+ iteration++;
+ password += String.fromCharCode(randomNumber);
+ }
+ document.getElementById('mypassword').innerHTML=password;
+}
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/css/bootstrap.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://bootstraptema.ru/_sf/3/334.js" type="text/javascript"></script>
+
+<div class="container">
+<div class="row">
+
+<div id="qrGenerator" class="col-xs-12">
+<h1 class="text-center">QR Генератор</h1>
+
+<div id="settings" class="col-md-6">
+
+
+<div class="form-group">
+<div class="input-group input-group-sm col-sm-12">
+<span class="input-group-addon">Ширина QR</span>
+<input type="text" id="qrWidth" class="form-control" value="210" placeholder="210">
+</div>
+</div>
+
+<div class="form-group">
+<div class="input-group input-group-sm col-sm-12">
+<span class="input-group-addon">Высота QR</span>
+<input type="text" id="qrHeight" class="form-control" value="210" placeholder="210">
+</div>
+</div>
+
+
+<div class="form-group">
+<div class="input-group input-group-sm col-sm-12">
+<span class="input-group-addon">Цвет QR кода</span>
+<input type="text" id="qrColor" class="form-control" value="#000000">
+</div>
+</div>
+
+<div class="form-group">
+<div class="input-group input-group-sm col-sm-12">
+<span class="input-group-addon">Фон QR кода</span>
+<input type="text" id="qrBgColor" class="form-control" value="#FFFFFF">
+</div>
+</div>
+
+<div class="form-group">
+<div class="input-group input-group-sm col-sm-12">
+<span class="input-group-addon">QR информация</span>
+<input type="text" id="qrUrl" class="form-control" value="BootstrapТема" placeholder="BootstrapТема">
+</div>
+</div>
+
+<input id="generate" class="btn btn-default btn-block" type="submit" value="Сделать" />
+
+</div>
+
+<div class="col-md-6" id="generateCell">
+<br>
+<div id="qr"><div class="bg"></div><canvas></canvas></div>
+</div>
+</div>
+<div class="clearfix"></div>
+
+<script>
+$(function () {
+$('#generate').click(function () {
+$('#qr .bg').empty().qrcode({
+width: $('#qrWidth').val(),
+height: $('#qrHeight').val(),
+color: $('#qrColor').val(),
+bgColor: $('#qrBgColor').val(),
+text: $('#qrUrl').val()
+});
+$('#qr .bg').css({ background: $('#qrBgColor').val()});
+});
+});
+</script>
+
+</div>
+</div>
+
+<link rel="stylesheet" href="https://bootstraptema.ru/plugins/2015/b-v3-3-6/bootstrap.min.css" />
+<link rel="stylesheet" href="https://bootstraptema.ru/_sf/2/279_tic-tac-toe.css" />
+<br><br><br>
+
+<div class="container"><div class="row">
+
+<div class="col-xs-12">
+
+<div class="col-md-6">
+<img src="http://drawings-girls.ucoz.net/2015/08/devushka-s-veerom-na-lejanke.jpg" class="img-responsive" alt="1" />
+<h2 class="text-center">Крестики & Нолики </h2>
+</div>
+
+<div class="col-md-6">
+<div class="clearfix"></div>
+ <article class="parent">
+ <form>
+ <div id="gr">
+ <input type="checkbox" id="a1">
+ <input type="checkbox" id="a2">
+ <input type="checkbox" id="a3">
+ <input type="checkbox" id="a4">
+ <input type="checkbox" id="a5">
+ <input type="checkbox" id="a6">
+ <input type="checkbox" id="a7">
+ <input type="checkbox" id="a8">
+ <input type="checkbox" id="a9">
+
+ <input type="checkbox" id="b1">
+ <input type="checkbox" id="b2">
+ <input type="checkbox" id="b3">
+ <input type="checkbox" id="b4">
+ <input type="checkbox" id="b5">
+ <input type="checkbox" id="b6">
+ <input type="checkbox" id="b7">
+ <input type="checkbox" id="b8">
+ <input type="checkbox" id="b9">
+
+ <input type="checkbox" id="c1">
+ <input type="checkbox" id="c2">
+ <input type="checkbox" id="c3">
+ <input type="checkbox" id="c4">
+ <input type="checkbox" id="c5">
+ <input type="checkbox" id="c6">
+ <input type="checkbox" id="c7">
+ <input type="checkbox" id="c8">
+ <input type="checkbox" id="c9">
+
+ <input type="checkbox" id="d1">
+ <input type="checkbox" id="d2">
+ <input type="checkbox" id="d3">
+ <input type="checkbox" id="d4">
+ <input type="checkbox" id="d5">
+ <input type="checkbox" id="d6">
+ <input type="checkbox" id="d7">
+ <input type="checkbox" id="d8">
+ <input type="checkbox" id="d9">
+
+ <input type="checkbox" id="e1">
+ <input type="checkbox" id="e2">
+ <input type="checkbox" id="e3">
+ <input type="checkbox" id="e4">
+ <input type="checkbox" id="e5">
+ <input type="checkbox" id="e6">
+ <input type="checkbox" id="e7">
+ <input type="checkbox" id="e8">
+ <input type="checkbox" id="e9">
+
+
+ <div id="pa">
+ <label for="a1" id="aa1">O</label>
+ <label for="a2" id="aa2">O</label>
+ <label for="a3" id="aa3">O</label>
+ <label for="a4" id="aa4">O</label>
+ <label for="a5" id="aa5">O</label>
+ <label for="a6" id="aa6">O</label>
+ <label for="a7" id="aa7">O</label>
+ <label for="a8" id="aa8">O</label>
+ <label for="a9" id="aa9">O</label>
+ </div>
+
+ <div id="pb">
+ <label for="b1" id="bb1">O</label>
+ <label for="b2" id="bb2">O</label>
+ <label for="b3" id="bb3">O</label>
+ <label for="b4" id="bb4">O</label>
+ <label for="b5" id="bb5">O</label>
+ <label for="b6" id="bb6">O</label>
+ <label for="b7" id="bb7">O</label>
+ <label for="b8" id="bb8">O</label>
+ <label for="b9" id="bb9">O</label>
+ </div>
+
+ <div id="pc">
+ <label for="c1" id="cc1">O</label>
+ <label for="c2" id="cc2">O</label>
+ <label for="c3" id="cc3">O</label>
+ <label for="c4" id="cc4">O</label>
+ <label for="c5" id="cc5">O</label>
+ <label for="c6" id="cc6">O</label>
+ <label for="c7" id="cc7">O</label>
+ <label for="c8" id="cc8">O</label>
+ <label for="c9" id="cc9">O</label>
+ </div>
+
+ <div id="pd">
+ <label for="d1" id="dd1">O</label>
+ <label for="d2" id="dd2">O</label>
+ <label for="d3" id="dd3">O</label>
+ <label for="d4" id="dd4">O</label>
+ <label for="d5" id="dd5">O</label>
+ <label for="d6" id="dd6">O</label>
+ <label for="d7" id="dd7">O</label>
+ <label for="d8" id="dd8">O</label>
+ <label for="d9" id="dd9">O</label>
+ </div>
+
+ <div id="pe">
+ <label for="e1" id="ee1">O</label>
+ <label for="e2" id="ee2">O</label>
+ <label for="e3" id="ee3">O</label>
+ <label for="e4" id="ee4">O</label>
+ <label for="e5" id="ee5">O</label>
+ <label for="e6" id="ee6">O</label>
+ <label for="e7" id="ee7">O</label>
+ <label for="e8" id="ee8">O</label>
+ <label for="e9" id="ee9">O</label>
+ </div>
+
+ <span id="o1">O</span>
+ <span id="o2">O</span>
+ <span id="o3">O</span>
+ <span id="o4">O</span>
+ <span id="o5">O</span>
+ <span id="o6">O</span>
+ <span id="o7">O</span>
+ <span id="o8">O</span>
+ <span id="o9">O</span>
+
+ <span id="x1">X</span>
+ <span id="x2">X</span>
+ <span id="x3">X</span>
+ <span id="x4">X</span>
+ <span id="x5">X</span>
+ <span id="x6">X</span>
+ <span id="x7">X</span>
+ <span id="x8">X</span>
+ <span id="x9">X</span>
+
+ <span id="d1">X</span>
+ <span id="d2">X</span>
+ <span id="d3">X</span>
+ <span id="d4">X</span>
+ <span id="d5">X</span>
+ <span id="d6">X</span>
+ <span id="d7">X</span>
+ <span id="d8">X</span>
+ <span id="d9">X</span>
+
+
+ <p id="wx1">I win</p>
+ <p id="wx2">I win</p>
+ <p id="wx3">I win</p>
+ <p id="wx4">I win</p>
+ <p id="wx5">I win</p>
+ <p id="wx6">I win</p>
+ <p id="wx7">I win</p>
+ <p id="wx8">I win</p>
+ <p id="wx9">I win</p>
+
+ <p id="wd1">draw</p>
+ <p id="wd2">draw</p>
+ <p id="wd3">draw</p>
+ <p id="wd4">draw</p>
+ <p id="wd5">draw</p>
+ <p id="wd6">draw</p>
+ <p id="wd7">draw</p>
+ <p id="wd8">draw</p>
+ <p id="wd9">draw</p>
+
+ <p id="wo1">You win</p>
+ <p id="wo2">You win</p>
+ <p id="wo3">You win</p>
+ <p id="wo4">You win</p>
+ <p id="wo5">You win</p>
+ <p id="wo6">You win</p>
+ <p id="wo7">You win</p>
+ <p id="wo8">You win</p>
+ <p id="wo9">You win</p>
+
+ </div>
+ <input id="button1" type="reset" value="Новая игра">
+ </form>
+ </article>
+<div class="clearfix"></div>
+</div>
 
 
 </body>
