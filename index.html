@@ -427,6 +427,60 @@ $("#convert").click(function(){
 <img src="god.gif" alt="Описание GIF-файла" style="width: 300px; height: auto;">
 
 
+
+
+
+
+
+
+
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Поисковик</title>
+    <style> form { display: flex; justify-content: center; align-items: center; margin-top: 50px; } input[type="text"] { padding: 10px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc; width: 300px; } button { background-color: #007BFF; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px; } button:hover { background-color: #0056b3; } </style>
+</head>
+<body>
+    <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q" placeholder="Поиск...">
+        <button type="submit">Найти</button>
+    </form>
+
+    <script> document.querySelector('input[name="q"]').addEventListener("keyup", function(event) { if (event.key === 'Enter') { event.preventDefault(); document.querySelector('form').submit(); } }); </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
 <h1>Добро пожаловать на мой сайт!</h1>
 
  <meta charset="UTF-8">
